@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  remote_user: root
+  become_method: sudo
+  tasks:
+  roles:
+   - user_creation
+  
+
+
