@@ -1,0 +1,12 @@
+---
+- name: User Creation
+  user: 
+   name: "{{user_name}}"
+   password: "{{'asdfasdf' | password_hash('sha512')}}"
+   comment: "{{user_full_name}}"
+   shell: /bin/bash
+   group: wheel
+   home: /home/{{user_name}}
+   
+   
+   
